@@ -49,7 +49,7 @@ def invalid_route(e):
     return jsonify({"code": 404}), 404
 
 @app.route('/metrics')
-def requests_count():
+def metrics_count():
     """ Returns metrics in prometheus format """
     res = []
     for k,v in graphs.items():

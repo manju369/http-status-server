@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: flask-server-service-monitor
+  labels:
+    name: flask
+spec:
+  selector:
+    matchLabels:
+      app: flask-app
+  namespaceSelector:
+    any: true
+  endpoints:
+    - port: main

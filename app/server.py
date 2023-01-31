@@ -1,9 +1,9 @@
 import logging
-import prometheus_client
-from prometheus_client import Summary, Counter, Histogram, Gauge, generate_latest
+#import prometheus_client
+from prometheus_client import Counter, generate_latest
 from flask import Flask, jsonify, request, Response
 
-logging.basicConfig(level=logging.INFO,format='%(asctime)s %(levelname)s %(message)s')
+logging.basicConfig(level=logging.INFO,format='%(levelname)s %(message)s')
 
 app = Flask(__name__)
 
@@ -34,7 +34,7 @@ def code_for_201():
     return jsonify({"code": 201 }), 201
 
 
-@app.route("/codes/callbackend")
+@app.route("/codes/call-backend")
 def code_for_503():
     """ Return 503 HTTP Status code """
     global count_callbackend
@@ -53,8 +53,8 @@ def metrics_count():
     """ Returns metrics in prometheus format """
     res = []
     for k,v in graphs.items():
-        res.append(prometheus_client.generate_latest(v))
+        res.append(generate_latest(v))
     return Response(res, mimetype="text/plain")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=5000)

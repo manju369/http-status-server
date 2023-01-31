@@ -1,5 +1,4 @@
 HTTP Status server returns the HTTP status code for the requested path. This server uses Python Flask module 
-<img width="746" alt="Screenshot 2023-01-31 at 10 14 31 AM" src="https://user-images.githubusercontent.com/36835720/215667824-241c204b-b3ef-4d59-b2e4-427eb5629e09.png">
 
 
 Code:
@@ -26,12 +25,19 @@ Deployment:
 
   ``` curl http://35.244.49.131.nip.io/codes
       curl http://35.244.49.131.nip.io/codes/update
-      curl http://35.244.49.131.nip.io/codes/call-backend ```
+      curl http://35.244.49.131.nip.io/codes/call-backend 
+   ```
 
    
    Response: 
 <img width="746" alt="Screenshot 2023-01-31 at 10 14 31 AM" src="https://user-images.githubusercontent.com/36835720/215667560-503e6692-4070-48e9-9127-aa6b9f2f1493.png">
 
 
-<img width="746" alt="Screenshot 2023-01-31 at 10 14 31 AM" src="https://user-images.githubusercontent.com/36835720/215667760-1a334ad5-a7ff-4bc5-878a-9a11f6e0f7f3.png">
+Prometheus and Grafana DashBoards:
+
+<img width="1439" alt="Screenshot 2023-01-31 at 9 31 15 AM" src="https://user-images.githubusercontent.com/36835720/215668069-24260f8e-c1af-4c96-b3c4-0695bb0db894.png">
+
+<img width="1381" alt="Screenshot 2023-01-31 at 9 54 27 AM" src="https://user-images.githubusercontent.com/36835720/215668131-03b80f52-4004-4625-a8d1-b3aba08af863.png">
+
+
 

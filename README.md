@@ -1,4 +1,5 @@
 HTTP Status server returns the HTTP status code for the requested path. This server uses Python Flask module 
+<img width="746" alt="Screenshot 2023-01-31 at 10 14 31 AM" src="https://user-images.githubusercontent.com/36835720/215667824-241c204b-b3ef-4d59-b2e4-427eb5629e09.png">
 
 
 Code:

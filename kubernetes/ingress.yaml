@@ -24,5 +24,12 @@ spec:
             name: flask-app-service 
             port:
               number: 5000
+      - path: /metrics
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: flask-app-service
+            port:
+              number: 5000
 
 

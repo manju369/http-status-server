@@ -13,7 +13,9 @@ Deployment:
   ```docker buildx build --platform linux/amd64  -t manju369/flask-server:2 .```
   
 *  Kubernetes: 
-    
+
+    Hosting these services in my free tier GCP-GKE account
+
    ```kubectl apply -f /```
 
     creates deployment, service, ingress-rule and service-monitor(prometheus operated) resources
